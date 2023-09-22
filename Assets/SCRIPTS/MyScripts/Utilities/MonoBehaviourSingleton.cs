@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Toolbox
+namespace Utilities
 {
     public abstract class MonoBehaviourSingleton<T> : MonoBehaviour where T : MonoBehaviourSingleton<T>
     {

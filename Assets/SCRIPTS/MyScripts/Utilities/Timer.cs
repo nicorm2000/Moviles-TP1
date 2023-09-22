@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Toolbox
+namespace Utilities
 {
     public class Timer
     {

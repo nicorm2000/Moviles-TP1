@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using Toolbox;
+using Utilities;
 
 public class GameConfiguration : MonoBehaviourSingleton<GameConfiguration>
 {
