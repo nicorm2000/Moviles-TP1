@@ -657,6 +657,7 @@ GameObject:
   - component: {fileID: 3973475792127445557}
   - component: {fileID: 2136256155436863851}
   - component: {fileID: 9036663369671730341}
+  - component: {fileID: 6163517210089184733}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -751,6 +752,18 @@ MonoBehaviour:
   - {fileID: 2800000, guid: e7070f5025303a04f8753dd8acb5245e, type: 3}
   ImaReady: {fileID: 2800000, guid: cd96293139f94fb4b925e67c2069bc43, type: 3}
   ContrCalib: {fileID: 0}
+--- !u!114 &6163517210089184733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181284003244869515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e1039f4ae9a464785002965e117676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7463765477585125426
 GameObject:
   m_ObjectHideFlags: 0
