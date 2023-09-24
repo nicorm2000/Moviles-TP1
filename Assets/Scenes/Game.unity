@@ -86379,6 +86379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 609b8915e394106489aefe4ad9db3903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  scoreImages: []
 --- !u!1 &614833456
 GameObject:
   m_ObjectHideFlags: 0
@@ -87513,6 +87515,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 609b8915e394106489aefe4ad9db3903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  scoreImages: []
 --- !u!1 &1325283264
 GameObject:
   m_ObjectHideFlags: 0
@@ -87913,13 +87917,13 @@ MonoBehaviour:
   - {fileID: 1187412604}
   - {fileID: 1643806369}
   bonusFill:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1251750760}
+  - {fileID: 1154985427}
   bonusText:
-  - {fileID: 0}
-  - {fileID: 0}
-  settingsPanel: {fileID: 0}
-  menuSceneName: 
+  - {fileID: 1896886468}
+  - {fileID: 60763191}
+  settingsPanel: {fileID: 354047490}
+  menuSceneName: MainMenu
 --- !u!224 &1839095751 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5793262705043846042, guid: 470effe39c68efc4799ed755e494962f,
