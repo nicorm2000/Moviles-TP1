@@ -27,7 +27,7 @@ namespace Entities.Player
 
         public Action<int, int> OnUpdateScore = null;
 
-        /// Properties
+        // Properties
         public int CurrentTotalMoneyBags { get => currentTotalMoneyBags; }
 
         public bool AddMoneyBag(MoneyBag moneyBag)
