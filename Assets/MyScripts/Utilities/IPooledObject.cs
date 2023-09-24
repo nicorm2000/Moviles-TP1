@@ -1,18 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class IPooledObject : MonoBehaviour
+namespace Utilities.Pool
 {
-    // Start is called before the first frame update
-    void Start()
+    public interface IPooledObject
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /// <summary>
+        /// Initialize the object in question with whatever is inside this function
+        /// </summary>
+        public void OnObjectSpawn();
     }
 }
