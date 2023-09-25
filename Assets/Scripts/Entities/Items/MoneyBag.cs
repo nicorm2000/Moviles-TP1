@@ -21,6 +21,7 @@ namespace Entities.Items
         {
             if (other.CompareTag("Player"))
             {
+                Debug.Log("collision");
                 Player.Player player = other.GetComponent<Player.Player>();
 
                 if (player.AddMoneyBag(this))

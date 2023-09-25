@@ -44,7 +44,7 @@ namespace UI
         /// Toggles the visibility of the setting panel and adjusts the time scale accordingly.
         /// </summary>
         /// <param name="state">True to show the setting panel, false to hide it.</param>
-        public void SettingPanel(bool state)
+        public void SettingsPanel(bool state)
         {
             settingsPanel.SetActive(state);
             if (state)

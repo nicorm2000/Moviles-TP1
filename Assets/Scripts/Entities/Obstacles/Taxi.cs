@@ -34,7 +34,6 @@ namespace Entities.Obstacle
         private float turnDurationTimer = 0;
         private float tiempEntreGiro = 0;
         private float tempoEntreGiro = 0;
-        private float tiempPGiro = 1; /// 1 es el tiempo que tarda en llegar al otro quaternion
 		private bool respawn = false;
 
         private void Start()

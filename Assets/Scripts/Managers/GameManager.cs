@@ -114,7 +114,6 @@ namespace Managers
         [Serializable]
         public class PlayerComponent
         {
-            public string tag;
             public Player player;
             public CarController carController;
             public PlayerData playerData;
