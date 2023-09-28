@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class PantallaCalibTuto : MonoBehaviour 
 {
@@ -56,8 +55,6 @@ public class PantallaCalibTuto : MonoBehaviour
 			GetComponent<Renderer>().material.mainTexture = ImaReady;
 			
 			break;
-		}
-			
-			
+		}		
 	}
 }

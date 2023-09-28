@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class Deposito2 : MonoBehaviour 
 {
@@ -49,8 +48,6 @@ public class Deposito2 : MonoBehaviour
 		
 		PjActual = null;
 		Vacio = true;
-		
-	
 	}
 	
 	public void Entrar(Player pj)

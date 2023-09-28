@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class Obstaculo : MonoBehaviour 
 {
@@ -47,9 +46,7 @@ public class Obstaculo : MonoBehaviour
 			Chocado = true;
 		}
 	}
-	
-	//------------------------------------------------//
-	
+
 	protected virtual void Desaparecer()
 	{}
 	

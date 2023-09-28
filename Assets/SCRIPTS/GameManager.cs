@@ -208,35 +208,11 @@ public class GameManager : MonoBehaviour {
         Player1.GetComponent<Frenado>().Frenar();
         if(multiplayer.isMultiplayer)
             Player2.GetComponent<Frenado>().Frenar();
-
         Player1.ContrDesc.FinDelJuego();
         if (multiplayer.isMultiplayer)
             Player2.ContrDesc.FinDelJuego();
     }
 
-    //se encarga de posicionar la camara derecha para el jugador que esta a la derecha y viseversa
-    //void SetPosicion(PlayerInfo pjInf) {
-    //    pjInf.PJ.GetComponent<Visualizacion>().SetLado(pjInf.LadoAct);
-    //    //en este momento, solo la primera vez, deberia setear la otra camara asi no se superponen
-    //    pjInf.PJ.ContrCalib.IniciarTesteo();
-    //
-    //
-    //    if (pjInf.PJ == Player1) {
-    //        if (pjInf.LadoAct == Visualizacion.Lado.Izq)
-    //            Player2.GetComponent<Visualizacion>().SetLado(Visualizacion.Lado.Der);
-    //        else
-    //            Player2.GetComponent<Visualizacion>().SetLado(Visualizacion.Lado.Izq);
-    //    }
-    //    else {
-    //        if (pjInf.LadoAct == Visualizacion.Lado.Izq)
-    //            Player1.GetComponent<Visualizacion>().SetLado(Visualizacion.Lado.Der);
-    //        else
-    //            Player1.GetComponent<Visualizacion>().SetLado(Visualizacion.Lado.Izq);
-    //    }
-    //
-    //}
-
-    //cambia a modo de carrera
     void CambiarACarrera() {
 
         EstAct = GameManager.EstadoJuego.Jugando;
@@ -244,25 +220,20 @@ public class GameManager : MonoBehaviour {
         for (int i = 0; i < ObjsCarrera.Length; i++) {
             ObjsCarrera[i].SetActive(true);
         }
-
         //desactivacion de la calibracion
         Player1.FinCalibrado = true;
 
         for (int i = 0; i < ObjsCalibracion1.Length; i++) {
             ObjsCalibracion1[i].SetActive(false);
         }
-
         if (multiplayer.isMultiplayer)
         {
             Player2.FinCalibrado = true;
-
             for (int i = 0; i < ObjsCalibracion2.Length; i++)
             {
                 ObjsCalibracion2[i].SetActive(false);
             }
-
         }
-
         if (multiplayer.isMultiplayer)
         {
             if (Player1.LadoActual == Visualizacion.Lado.Izq)
@@ -278,7 +249,6 @@ public class GameManager : MonoBehaviour {
         }
         //posiciona los camiones dependiendo de que lado de la pantalla esten
         
-
         Player1.transform.forward = Vector3.forward;
         Player1.GetComponent<Frenado>().Frenar();
         Player1.CambiarAConduccion();
@@ -290,7 +260,6 @@ public class GameManager : MonoBehaviour {
             Player2.CambiarAConduccion();
         }
         
-
         //los deja andando
         Player1.GetComponent<Frenado>().RestaurarVel();
         if (multiplayer.isMultiplayer)
@@ -329,7 +298,6 @@ public class GameManager : MonoBehaviour {
                 CambiarACarrera();
             }
         }
-            
     }
 
     void MakePointsSnapshot()
@@ -338,5 +306,4 @@ public class GameManager : MonoBehaviour {
         if(player2)
             DatosPartida.player2Points = player2.Dinero;
     }
-
 }

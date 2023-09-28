@@ -48,20 +48,16 @@ public class Visualizacion : MonoBehaviour
     public GameObject TutoDescargando;
     public GameObject TutoFinalizado;
 
-    //------------------------------------------------------------------//
-
     void Awake() {
         enableInPlayerStates = uiRoot.GetComponentsInChildren<EnableInPlayerState>(includeInactive:true);
     }
 
-    // Use this for initialization
     void Start () 
 	{
 		Direccion = GetComponent<ControlDireccion>();
 		Pj = GetComponent<Player>();
     }
 	
-	// Update is called once per frame
 	void Update () 
 	{
         switch (Pj.EstAct) {
@@ -88,9 +84,7 @@ public class Visualizacion : MonoBehaviour
                 break;
         }
     }
-	
-	//--------------------------------------------------------//
-	
+
 	public void CambiarATutorial()
 	{
 		CamCalibracion.enabled = true;
@@ -117,8 +111,6 @@ public class Visualizacion : MonoBehaviour
 
         Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
     }
-	
-	//---------//
 	
 	public void SetLado(Lado lado)
 	{
@@ -212,8 +204,6 @@ public class Visualizacion : MonoBehaviour
 					PrimIma = false;
 				else
 					PrimIma = true;
-
-
 				if(PrimIma) {
 					Inventario.sprite = InvSprites[3];
 				}

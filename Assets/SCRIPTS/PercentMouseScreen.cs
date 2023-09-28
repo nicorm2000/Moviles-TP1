@@ -1,9 +1,7 @@
 using UnityEngine;
-using System.Collections;
 
 public class MousePos : MonoBehaviour 
 {
-
 	public enum AxisRelation{Horizontal, Vertical}
 
     static public float RelCalibration()
@@ -19,7 +17,6 @@ public class MousePos : MonoBehaviour
 		case AxisRelation.Horizontal:
 			res = ((float)(Input.mousePosition.x / Screen.width)) *2 -1;
 				return res;
-			
 			
 		case AxisRelation.Vertical:
 			res = ((float)(Input.mousePosition.y / Screen.height)) *2 -1;

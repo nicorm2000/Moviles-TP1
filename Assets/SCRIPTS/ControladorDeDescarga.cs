@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class ControladorDeDescarga : MonoBehaviour 
 {
@@ -25,7 +24,6 @@ public class ControladorDeDescarga : MonoBehaviour
 	public GameObject Pallet2;
 	public GameObject Pallet3;
 	
-	
 	public Estanteria Est1;
 	public Estanteria Est2;
 	public Estanteria Est3;
@@ -35,10 +33,8 @@ public class ControladorDeDescarga : MonoBehaviour
 	public float Bonus = 0;
 	float TempoBonus;
 	
-	
 	public AnimMngDesc ObjAnimado;
 
-	
 	//--------------------------------------------------------------//
 
 	// Use this for initialization
@@ -70,9 +66,7 @@ public class ControladorDeDescarga : MonoBehaviour
 			{
 				Bonus = 0;
 			}		
-		}
-		
-		
+		}	
 	}
 	
 	//--------------------------------------------------------------//
@@ -91,7 +85,6 @@ public class ControladorDeDescarga : MonoBehaviour
 			
 		CollCamion.enabled = false;
 		Pj.CambiarADescarga();
-		
 		
 		GameObject go;
 		//asigna los pallets a las estanterias
@@ -197,5 +190,4 @@ public class ControladorDeDescarga : MonoBehaviour
 		Dep.Soltar();
 		
 	}
-	
 }

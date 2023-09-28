@@ -26,8 +26,6 @@ public class Player : MonoBehaviour
 
 	public Visualizacion.Lado LadoActual => MiVisualizacion.LadoAct;
 
-	//------------------------------------------------------------------//
-
 	void Start () 
 	{
 		for(int i = 0; i< Bolasas.Length;i++)
@@ -35,8 +33,6 @@ public class Player : MonoBehaviour
 		
 		MiVisualizacion = GetComponent<Visualizacion>();
 	}
-	
-	//------------------------------------------------------------------//
 	
 	public bool AgregarBolsa(Bolsa b)
 	{
