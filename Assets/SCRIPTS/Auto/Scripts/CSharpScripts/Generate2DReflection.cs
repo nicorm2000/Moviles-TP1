@@ -41,7 +41,6 @@ public class Generate2DReflection : MonoBehaviour
 			rtex = new RenderTexture(textureSize, textureSize, 16);
 			rtex.hideFlags = HideFlags.HideAndDontSave;
 			rtex.isPowerOfTwo = true;
-			rtex.isCubemap = true;
 			rtex.useMipMap = false;
 			rtex.Create();
 			

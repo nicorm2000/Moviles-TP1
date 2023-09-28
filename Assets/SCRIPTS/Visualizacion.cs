@@ -72,7 +72,6 @@ public class Visualizacion : MonoBehaviour
                 //contador de dinero
                 SetDinero();
                 //el volante
-                SetVolante();
                 break;
 
             case Player.Estados.EnDescarga:
@@ -193,14 +192,6 @@ public class Visualizacion : MonoBehaviour
                 TutoFinalizado.SetActive(true);
                 break;
 		}
-	}
-	
-	void SetVolante()
-	{
-		float angulo = - 45 * Direccion.GetGiro();
-        Vector3 rot = volante.localEulerAngles;
-        rot.z = angulo;
-        volante.localEulerAngles = rot;
 	}
 	
 	void SetInv()

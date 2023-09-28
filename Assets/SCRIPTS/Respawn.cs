@@ -58,7 +58,10 @@ public class Respawn : MonoBehaviour
 	public void Respawnear()
 	{
 		GetComponent<Rigidbody>().velocity = Vector3.zero;
-		
+		GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+
+		transform.rotation = Quaternion.identity;
+
 		gameObject.GetComponent<CarController>().SetGiro(0f);
 
         if (CPAct.Habilitado())
