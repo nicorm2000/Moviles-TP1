@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    void Update() {
+    private void Update() {
         switch (EstAct) {
 #if UNITY_ANDROID
         case EstadoJuego.Calibrando:

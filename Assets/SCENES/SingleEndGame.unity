@@ -4360,7 +4360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b9bcdc7ea7f3b4b8c29395c72b17f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplayer: {fileID: 11400000, guid: 6815db4c736776f42b1149b8dad56278, type: 2}
+  multiplayer: {fileID: 11400000, guid: d9a838df15b003d40becb05da1a14287, type: 2}
 --- !u!1 &235761671
 GameObject:
   m_ObjectHideFlags: 0

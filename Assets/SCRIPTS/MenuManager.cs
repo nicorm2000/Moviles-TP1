@@ -11,7 +11,7 @@ public class MenuManager : MonoBehaviour
     public List<GameObject> objects;
 
     [SerializeField] DifficultyScriptableObject difficulty;
-    [SerializeField] MultiplayerScriptableObject multiplayer;
+    public MultiplayerScriptableObject multiplayer;
 
     private void Start()
     {
@@ -86,7 +86,7 @@ public class MenuManager : MonoBehaviour
 
     public void ChangeMultiplayer(bool multi)
     {
-        multiplayer.isMultiplayer = multi;
+        //multiplayer.isMultiplayer = multi;
     }
 
     public void PauseGame()
@@ -104,11 +104,11 @@ public class MenuManager : MonoBehaviour
     {
         if (multiplayer.isMultiplayer)
         {
-            SceneManager.LoadScene("MultiEndGame");
+            SceneManager.LoadScene(5);
         }
         else
         {
-            SceneManager.LoadScene("SingleEndGame");
+            SceneManager.LoadScene(4);
         }
     }
 }
