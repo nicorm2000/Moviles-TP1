@@ -23,14 +23,8 @@ public class AudioManager : MonoBehaviour
         audio = GetComponent<AudioSource>();
         if (!PlayerPrefs.HasKey("volume"))
         {
-            PlayerPrefs.SetFloat("volume", 0.5f);
+            PlayerPrefs.SetFloat("volume", 0.1f);
         }
         audio.volume = PlayerPrefs.GetFloat("volume"); 
     }
-
-    public void ChangeVolume(float volume)
-    {
-        PlayerPrefs.SetFloat("volume", volume);
-        audio.volume = PlayerPrefs.GetFloat("volume");
-    } 
 }

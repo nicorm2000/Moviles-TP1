@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6015423, g: 0.6018507, b: 0.6013663, a: 1}
+  m_IndirectSpecularColor: {r: 0.6019971, g: 0.60289484, b: 0.6022064, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!196 &3
 NavMeshSettings:
@@ -35762,7 +35762,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c8d13501f3113744283efced78b15c28, type: 2}
+  - {fileID: 2100000, guid: 5d472d4e59dec5e48bee84ab64b79e57, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61248,13 +61248,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImagenesDelTuto:
-  - {fileID: 2800000, guid: 2c9ac95f461fb0448aca4408de9647dc, type: 3}
-  - {fileID: 2800000, guid: f836f4a482f17844b801b9ceb13c1f8a, type: 3}
-  - {fileID: 2800000, guid: b7e088a57ed74ae4ebb26597dfb96cd7, type: 3}
+  - {fileID: 2800000, guid: 7cec268acba70e64e89e40641e01563d, type: 3}
+  - {fileID: 2800000, guid: 8c422f2a0a96c7b4aae84d9cb5bf4796, type: 3}
+  - {fileID: 2800000, guid: c11dd29f5aa9e9148bb4fafddc329044, type: 3}
   Intervalo: 1.5
   ImagenesDeCalib:
-  - {fileID: 2800000, guid: 7728fa8ba9181fe4ebdcb8509838f013, type: 3}
-  - {fileID: 2800000, guid: 7728fa8ba9181fe4ebdcb8509838f013, type: 3}
+  - {fileID: 2800000, guid: 1c1b6e2b373ba2249a8e680789511d64, type: 3}
+  - {fileID: 2800000, guid: 1c1b6e2b373ba2249a8e680789511d64, type: 3}
   ImaReady: {fileID: 2800000, guid: 9ca80ca9c8931c44db61689f8cff1d79, type: 3}
   ContrCalib: {fileID: 13045}
 --- !u!114 &12647 stripped
