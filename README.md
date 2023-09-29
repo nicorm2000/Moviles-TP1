@@ -1,8 +1,4 @@
 <h1>Design Patterns used in the project:</h1>
-<h2>FlyWeight</h2>
-<h3>FlyWeight purpose was to utilize scriptable objects to persistently store diverse data, such as the difficulty level or a boolean value indicating the game's multiplayer status. By doing so, the need for multiple objects containing this information across different scenes is eliminated, resulting in resource savings. 
-
-https://www.youtube.com/watch?v=0N7C-XzT2Nw&ab_channel=Bala_7</h3>
 <h2>Memento</hh2>
 <h3>The purpose of Memento in this case was for the game manager to store players scores as private data within its class, and save them in an external class for retrieval, so it basically avoids the need for the final game screen to directly access the game manager's public variables to obtain the scores.
 
