@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c346bf0e3edd47844aa22161171881bf, type: 3}
   m_Name: Multiplayer
   m_EditorClassIdentifier: 
-  isMultiplayer: 0
+  isMultiplayer: 1

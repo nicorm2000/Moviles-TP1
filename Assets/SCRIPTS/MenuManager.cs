@@ -86,7 +86,7 @@ public class MenuManager : MonoBehaviour
 
     public void ChangeMultiplayer(bool multi)
     {
-        //multiplayer.isMultiplayer = multi;
+        multiplayer.isMultiplayer = multi;
     }
 
     public void PauseGame()
